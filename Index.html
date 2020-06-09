@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Lato&family=Metal+Mania&display=swap');
+      body{
+        padding: 0%;
+        margin: 0%;
+        font-family: 'Lato' sans-serif;
+      }
+      .navbar-brand{
+        font-family: 'Metal Mania',cursive;
+        font-size: 35px;
+        color: green !important;
+      }
+      .second{
+        color: blue;
+      }
+      .nav-link{
+        font-size: 16px;
+        margin: 15px;
+        color:  #000000 !important;
+        font-family: 'Roboto Condensed';
+      }
+      .nav-link:hover{
+        color: red !important;
+      }
+      .active .nav-link{
+        color: darkblue !important;
+      }
+      .menu-right-btn{
+        padding: 13px 46px;
+        margin-right: 4%;
+        background-color: transparent;
+        transition: all 300ms ease-in;
+      }
+      .menu-right-btn:hover{
+        background-color: teal;
+        color: white;
+      }
+      .site-content{
+        background-image: url(money.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+      }
+      .site-title,.site-desc{
+        color: #ffffff;
+        font-family: 'Righteous';
+      }
+      .site-title{
+        margin-top: 30%;
+        margin-bottom: 6%;
+        font-size: 50px;
+      }
+      .site-desc{
+        font-size: 14px;
+        padding-left: 15%;
+      }
+      .site-btn1{
+        margin-left: 20%;
+        color: white;
+      }
+      .site-btn2{
+        color: black;
+      }
+      .site-btn1,.site-btn2{
+        margin-top: 5%;
+        margin-bottom: 40%;
+      }
+      .section-1, .heading-1{
+        margin-top: 8%;
+      }
+      .section-1, .heading-2{
+        margin-bottom: 5%;
+      }
+      .section-1, .para-1{
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 5%;
+      }
+      .section-1, .card-text, .para-1{
+        color: rgba(0,0,0,0.59);
+      }
+      .section-1{
+        margin-bottom: 8%;
+      }
+      .section-2 .container-fluid{
+        background-image: url(unsplash.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .section-2 .heading-1{
+        margin-top: 20%;
+        margin-bottom: 4%;
+        font-family: 'Righteous';
+        width: 80%;
+        color: whitesmoke;
+        font-weight: bolder;
+      }
+      .section-2 .para{
+        width: 80%;
+        font-family: 'Ubuntu';
+        color: whitesmoke;
+        margin-bottom: 7%;
+        font-weight: bold;
+      }
+      .section-2 .btn{
+        margin-bottom: 15%;
+        width: 30%;
+        padding: 2% 5%;
+        font-weight: bold;
+      }
+      .section-3{
+        margin-top: 6%;
+      }
+      .section-3 i{
+        color: darkblue;
+      }
+      .section-3 p{
+        color: rgba(0,0,0,0.59);
+      }
+      .section-4{
+        margin-top: 8%;
+      }
+      .section-4 .row .col-md-7 .col-md-5{
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+      .section-4 a{
+        color: seashell;
+        font-size: 40px;
+        text-decoration: none;
+      }
+      .section-4 .para-1{
+        color: #ffffff;
+        font-family: 'Roboto';
+        margin-top: 7%;
+        font-size: 18px;
+      }
+      .social{
+        align-items: center;
+      }
+      .social a{
+        text-align: center;
+        padding: 25px 18px;
+        font-size: 30px;
+      }
+      .card{
+        width: 20rem;
+      }
+      .social i{
+        color: red;
+        font-size: 23px;
+        align-items: center !important;
+      }
+      @media screen and (max-width: 768px) {
+        .section-1 .card{
+          width: 14rem;
+        }
+        .section-4 .col-md-7 img{
+          width: 350px;
+        }
+      }
+      @media screen and (max-width: 320px) {
+        .site-content,.site-title{
+          font-size: 30px;
+          padding-left: 15%;
+        }
+        .site-content .site-btn2{
+          display: none;
+        }
+        .site-content .site-btn1{
+          margin-left: 15%;
+        }
+        .section-1 .heading-1,.section-1 .heading-2{
+          font-size: 25px;
+        }
+        .section-1 .col-md-4{
+          padding: 5%;
+          margin-left: 8%;
+        }
+        .section-1 .card{
+          width: 15rem;
+        }
+        .section-4 .col-md-5{
+          padding: 0% 15%;
+        }
+        footer input[type="button"]{
+          margin-top: 5%;
+        }
+      }
+    </style>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a href="" class="navbar-brand ml-3">Make <span class="second">Money</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+
+          </div>
+          <div id="navbarMenu" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a href="Index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="About-Us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Portfolio</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button class="btn menu-right-btn border" type="submit" onclick="freedom()">
+                Click
+              </button>
+            </form>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="container-fluid p-0">
+          <div class="site-content">
+            <div class="d-flex justify-content-center">
+              <div class="d-flex flex-column">
+                <h1 class="site-title">The best way to make money online</h1>
+                <p class="site-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="d-flex flex-row">
+                  <input type="button" value="Earn Money" class="btn site-btn1 px-4 py-3 mr-4 btn-dark">
+                  <input type="button" value="Know More" class="btn site-btn2 px-4 py-3 mr-4 btn-light">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-1">
+          <div class="container text-center">
+            <h1 class="heading-1">Make 500$ per week</h1>
+            <h1 class="heading-2">With the best affiliate marketing platform</h1>
+            <p class="para-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+               when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+               <div class="row justifty-content-center text-center">
+                 <div class="col-md-4">
+                   <div class="card" style="width: 20rem;">
+                    <img src="desk.jpg" alt="E-Marketing is the future" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title">We make the future</h4>
+                      <p class="card-text"> 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                         and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                   </div>
+                 </div>
+                 <div class="col-md-4">
+                   <div class="card" style="width: 20rem;">
+                    <img src="market.jpg" alt="marketing strategy" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title">We have the best marketing strategy</h4>
+                      <p class="card-text">1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                         remaining essentially unchanged. It was popularised in the 1960s</p>
+                    </div>
+                  </div>
+                 </div>
+                 <div class="col-md-4">
+                   <div class="card" style="width: 20rem;">
+                    <img src="Idea.jpg" alt="Idea" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title">We invest in your idea</h4>
+                      <p class="card-text">
+                        text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                         when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into electronic typesetting
+                      </p>
+                    </div>
+                  </div>
+                 </div>
+               </div>
+          </div>
+        </div>
+        <div class="section-2">
+          <div class="container-fluid">
+            <div class="d-flex justify-content-end">
+              <div class="d-flex flex-column m-4">
+                <h1 class="heading-1">Share the information</h1>
+                <p class="para">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <input type="button" value="Show More" class="btn btn-danger">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="d-flex flex-row">
+                  <i class="fa fa-question fa-3x m-2"></i>
+                  <div class="d-flex flex-column">
+                    <h3 class="m-2">24/7 Support</h3>
+                    <p class="m-2">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                       when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex flex-row">
+                  <i class="fa fa-shopping-bag fa-3x m-2"></i>
+                  <div class="d-flex flex-column">
+                    <h3 class="m-2">Marketing</h3>
+                    <p class="m-2">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                       when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex flex-row">
+                  <i class="fa fa-desktop fa-3x m-2"></i>
+                  <div class="d-flex flex-column">
+                    <h3 class="m-2">Technology</h3>
+                    <p class="m-2">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                       when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+<div class="row mt-2">
+  <div class="col-md-4">
+    <div class="d-flex flex-row">
+      <i class="fa fa-shield fa-3x m-2"></i>
+      <div class="d-flex flex-column">
+        <h3 class="m-2">Authorized</h3>
+        <p class="m-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam,
+           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="d-flex flex-row">
+      <i class="fa fa-search fa-3x m-2"></i>
+      <div class="d-flex flex-column">
+        <h3 class="m-2">Seo</h3>
+        <p class="m-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="d-flex flex-row">
+      <i class="fa fa-plane fa-3x m-2"></i>
+      <div class="d-flex flex-column">
+        <h3 class="m-2">Speed</h3>
+        <p class="m-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+        <div class="section-4 bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                <img src="wallst.jpg" alt="" width="570">
+              </div>
+              <div class="col-md-5">
+                <h1 class="text-white">Where to start ?</h1>
+                <a href="">Join us</a>
+                <p class="para-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                   Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="section-5 text-center">
+          <h4 style="margin-top: 5%;">Design your website with Ziko Dev</h4>
+          <h4 class="my-4"></h4>
+          <div class="form-inline justify-content-center">
+            <input type="text" id="email" name="Email" placeholder="Enter Your Email" size="40" class="form-control px-4 py-2">
+            <input type="button" value="Send" class="btn btn-danger px-4 py-2">
+          </div>
+          <div class="social align-items-center" style="margin: 5%;">
+            <div class="d-flex flex-row justifty-content-center">
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-instagram"></i></a>
+              <a href=""><i class="fa fa-youtube"></i></a>
+            </div>
+          </div>
+          <hr>
+          <h5>&copy;Ziko Dev</h5>
+        </div>
+      </footer>
+    <!-- Optional JavaScript -->
+    <script src="script.js">
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
